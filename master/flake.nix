@@ -11,6 +11,7 @@
   inputs.src-bgfx-master.ref   = "refs/heads/master";
   inputs.src-bgfx-master.owner = "Halsys";
   inputs.src-bgfx-master.repo  = "nim-bgfx";
+  inputs.src-bgfx-master.dir   = "";
   inputs.src-bgfx-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
