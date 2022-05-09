@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bgfx-master".dir   = "master";
-  inputs."bgfx-master".owner = "nim-nix-pkgs";
-  inputs."bgfx-master".ref   = "master";
-  inputs."bgfx-master".repo  = "bgfx";
-  inputs."bgfx-master".type  = "github";
-  inputs."bgfx-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bgfx-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
